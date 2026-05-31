@@ -1,0 +1,5 @@
+streamlit
+smolagents
+wikipedia-api
+litellm
+duckduckgo-search
