@@ -108,13 +108,13 @@ def calculate(expression: str) -> str:
 @st.cache_resource
 def load_agent(key):
     model = LiteLLMModel(
-        model_id="groq/llama-3.3-8b-instant",
+        model_id="groq/llama-3.1-8b-instant",
         api_key=key
     )
     return CodeAgent(
         tools=[DuckDuckGoSearchTool(), wikipedia_search, calculate],
         model=model,
-        max_steps=6,
+        max_steps=3,
         verbosity_level=0
     )
 
