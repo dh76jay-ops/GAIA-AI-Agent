@@ -30,13 +30,13 @@ st.markdown("---")
 
 with st.sidebar:
     st.header("⚙️ Settings")
-   api_key = os.environ.get("GROQ_API_KEY","")
-if not api_key:
-    api_key = st.text_input(
-        "Groq API Key",
-        type="password",
-        placeholder="gsk_xxxxxxxxxxx"
-    )
+    api_key = os.environ.get("GROQ_API_KEY", "")
+    if not api_key:
+        api_key = st.text_input(
+            "🔑 Groq API Key",
+            type="password",
+            placeholder="gsk_xxxxxxxxxx"
+        )
     st.markdown("Get your key at [console.groq.com](https://console.groq.com)")
     st.markdown("---")
     st.markdown("**Tools Available:**")
