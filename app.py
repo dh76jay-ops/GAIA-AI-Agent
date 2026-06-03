@@ -108,7 +108,7 @@ def calculate(expression: str) -> str:
 @st.cache_resource
 def load_agent(key):
     model = LiteLLMModel(
-        model_id="groq/llama-3.1-70b-versatil",
+        model_id="groq/llama-3.1-70b-versatile",
         api_key=key
     )
     return CodeAgent(
